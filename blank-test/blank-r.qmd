@@ -1,0 +1,104 @@
+---
+execute:
+  echo: false
+  warning: false
+format:
+  blank-typst:
+    keep-typ: true
+    margin:
+      x: 1in
+      y: 1in
+---
+
+```{=typst}
+#set page(
+  fill: rgb("#142933")
+)
+
+#set text(
+  fill: white,
+  font: ("Tilt Prism"),
+  size: 32pt
+)
+
+#set align(center)
+```
+
+This is the base for your document content.
+
+```{=typst}
+#set align(left)
+#set text(
+  font: "Inconsolata",
+  size: 12pt,
+)
+```
+
+Exercitation ullamco proident id pariatur eu magna nisi. Minim consequat minim qui pariatur commodo officia ad ea. Irure ut reprehenderit dolor eiusmod est occaecat labore fugiat. Veniam irure anim eu culpa fugiat exercitation. Non voluptate deserunt ullamco exercitation quis minim deserunt do eu dolore laboris. Aliquip fugiat aliqua proident commodo. Consequat ut aliqua fugiat ullamco deserunt adipisicing consequat.
+
+Tempor proident in cupidatat cupidatat laborum et ut et. Aliquip aute non aliquip anim sint proident ea nostrud ex voluptate. Ut sit nulla id aute et enim. Laboris amet tempor dolore aute est sint consequat. Voluptate sint cillum cillum laboris ad sint adipisicing pariatur non enim elit proident velit. Cillum cupidatat eiusmod nisi qui adipisicing aliqua esse in. In tempor ea sint pariatur ipsum ea duis.
+
+```{=typst}
+#set align(center)
+#v(24pt)
+```
+
+```{r plt1, dev.args=list(bg="transparent")}
+#| fig.align: center
+#| fig.width: 5
+#| fig.height: 3
+#| out-width: "5in"
+#| out-height: "3in"
+library(ggplot2)
+ggplot() +
+  geom_point(
+    data = mtcars,
+    aes(wt, mpg),
+    fill = "white",
+    color = "#142933",
+    shape = 21
+  ) +
+  labs(
+    x = "Weight", y = "MPG",
+    title = "Weight vs MPG."
+  ) +
+  theme_minimal() +
+  theme(
+    title = element_text(family = "Tilt Neon", color = "white"),
+    text = element_text(family = "Tilt Neon", color = "white"),
+    axis.text = element_text(family = "Tilt Neon", color = "white"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = alpha("#b2b2b2", 1/2), linewidth = 0.125),
+    plot.background = element_rect(color = "#142933", fill = "#142933"),
+    panel.background = element_rect(color = "#142933", fill = "#142933")
+  )
+```
+
+```{=typst}
+#set align(left)
+#v(24pt)
+```
+
+Mollit ad adipisicing non irure sit dolore irure commodo veniam proident laborum ullamco. Et officia anim sunt reprehenderit esse qui aliqua veniam amet consectetur excepteur elit culpa reprehenderit. Deserunt voluptate et laborum sint dolore cupidatat nostrud anim ut duis ea. Sunt culpa aute do minim fugiat cillum.
+
+```{=typst}
+#pagebreak()
+
+#set align(center)
+#set table(
+  stroke: 0.25pt + white
+)
+```
+
+```{r tbl1}
+gt::gt(head(mtcars, 20))
+```
+
+```{=typst}
+#set align(left)
+#v(24pt)
+```
+
+Do culpa cillum nulla reprehenderit amet ipsum. Pariatur cillum amet in sint commodo sint ex ullamco deserunt est dolore sint do. Id laborum ipsum aliqua exercitation mollit in quis labore nisi minim amet ad. Ex est laborum id et reprehenderit adipisicing ullamco duis adipisicing ad deserunt cillum.
+
+Aliqua ex nulla eu mollit eiusmod qui. Reprehenderit laboris eu irure ex qui aliquip voluptate adipisicing nisi nulla tempor non exercitation. Esse ut deserunt labore enim. Magna eiusmod duis culpa id laborum cillum. Sunt sit anim ad aute incididunt nisi amet ipsum minim. Magna sint ullamco proident qui dolore ullamco elit mollit aute ut cillum. Mollit aliquip labore excepteur occaecat.

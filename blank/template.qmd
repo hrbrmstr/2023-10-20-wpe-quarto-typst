@@ -1,0 +1,6 @@
+---
+format:
+  blank-typst: default
+---
+
+This is the base for your document content.

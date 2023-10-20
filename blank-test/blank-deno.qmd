@@ -1,0 +1,58 @@
+---
+jupyter: deno
+execute:
+  echo: false
+format:
+  blank-typst:
+    keep-typ: true
+    margin:
+      x: 1in
+      y: 1in
+---
+
+```{=typst}
+#set page(
+  fill: rgb("#142933")
+)
+
+#set text(
+  fill: white,
+  font: ("Tilt Prism"),
+  size: 32pt
+)
+
+#set align(center)
+```
+
+This is the base for your document content.
+
+```{typescript}
+import { DOMParser, SVGElement } from 'npm:linkedom'
+import * as Plot from "npm:@observablehq/plot"
+
+const document = new DOMParser().parseFromString (
+  `<!DOCTYPE html><html lang="en"></html>`, "text/html"
+)
+
+const plt = Plot.plot({
+  document:document,
+  style: {
+    color: "white",
+    fontFamily: "Tilt Neon",
+    fontSize: "32pt"
+  },
+  marks: [
+    Plot.frame(),
+    Plot.text(
+      [ "Hello, world!" ], 
+      { 
+        frameAnchor: "middle" 
+      }
+    )
+  ]
+})
+
+plt.setAttribute("xmlns", "http://www.w3.org/2000/svg")
+
+plt
+```

@@ -1,0 +1,8 @@
+---
+title: "A Very Important Title"
+footer: "Bottoms Up"
+format:
+  params-typst: default
+---
+
+This is the base for your document content.

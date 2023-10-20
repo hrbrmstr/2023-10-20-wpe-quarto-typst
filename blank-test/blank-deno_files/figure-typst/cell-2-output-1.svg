@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="color:white;font-family:Tilt Neon;font-size:32pt" viewBox="0 0 640 60" height="60" width="640" text-anchor="middle" font-size="10" font-family="system-ui, sans-serif" fill="currentColor" class="plot-d6a7b5"><style>.plot-d6a7b5 {
+  display: block;
+  background: white;
+  height: auto;
+  height: intrinsic;
+  max-width: 100%;
+}
+.plot-d6a7b5 text,
+.plot-d6a7b5 tspan {
+  white-space: pre;
+}</style><rect height="59" width="639" y="0.5" x="0.5" stroke="currentColor" fill="none" aria-label="frame" /><g aria-label="text"><text transform="translate(320,30)" y="0.32em">Hello, world!</text></g></svg>

@@ -1,0 +1,11 @@
+{
+  "hash": "3f77136e5a5c62699d263c054e664d89",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nexecute:\n  echo: false\nformat:\n  blank-typst:\n    keep-typ: true\n    margin:\n      x: 1in\n      'y': 1in\n---\n\n```{=typst}\n#set page(\n  fill: rgb(\"#142933\")\n)\n\n#set text(\n  fill: white,\n  font: (\"Tilt Prism\"),\n  size: 32pt\n)\n\n#set align(center)\n```\n\nThis is the base for your document content.\n\n::: {.cell execution_count=1}\n\n::: {.cell-output .cell-output-display execution_count=1}\n![](blank-deno_files/figure-typst/cell-2-output-1.svg){}\n:::\n:::\n\n\n",
+    "supporting": [
+      "blank-deno_files"
+    ],
+    "filters": []
+  }
+}
