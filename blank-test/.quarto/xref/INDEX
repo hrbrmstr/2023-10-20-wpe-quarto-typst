@@ -1,6 +1,7 @@
 {
   "blank-test.qmd": {
-    "blank-test.html": "23c7d8d0"
+    "blank-test.html": "23c7d8d0",
+    "blank-test.typ": "d5d2142c"
   },
   "blank-deno.qmd": {
     "blank-deno.typ": "d0e34456"

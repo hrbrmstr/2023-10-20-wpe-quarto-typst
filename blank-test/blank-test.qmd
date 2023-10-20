@@ -1,6 +1,7 @@
 ---
-blank-typst: 
-  keep-typ: true
+format:
+  blank-typst: 
+    keep-typ: true
 ---
 
 ## Quarto
